@@ -1,0 +1,9 @@
+main {
+    background-color: rgb(228, 231, 233); 
+    padding: 4px; 
+    color: #202020;
+  }
+
+  h1, h2 {
+    color: darkblue;
+  }
