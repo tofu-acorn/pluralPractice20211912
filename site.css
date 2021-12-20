@@ -6,7 +6,12 @@ main {
     background-color: rgb(228, 231, 233); 
     padding: 4px; 
     color: #202020;
+    grid-area: main;
   }
+
+aside {
+    grid-area: aside;
+}
 
 h1, h2 {
     color: darkblue;
@@ -18,7 +23,7 @@ h1, h2 {
       padding: 2px;
       margin: 8px;
       border-radius: 8px;
-      max-width: 250px;
+      max-width: 50px;
   }
 
   .experience {
@@ -42,7 +47,60 @@ h1, h2 {
       bottom: 0;
       left: 0;
       width: 100%;
+      grid-area: footer;
 
+  }
+
+  #menu li {
+      display: inline;
+      padding: 8px;
+      background-color: rgb(27, 27, 27);
+      
+  }
+
+  #menu li a {
+      color: white !important;
+      text-decoration: none;
+      
+  }
+
+  #menu {
+      float: right;
+  }
+
+  #menu li.active {
+      background-color: darkslateblue;
+  }
+
+  header {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      grid-area: header;
+  }
+
+  header #menu {
+      margin-left: auto;
+  }
+
+
+
+  /*This is commented out to show how to use flexbox above, insider the header and header #menu
+  header #headshot, header #sitename, header #menu {
+      display: inline;
+      vertical-align: middle;
+  } */
+
+  /*This begins the training for CSS grid*/
+
+  .container {
+      display: grid;
+      grid-template-areas: 
+      "header header"
+      "main aside"
+      "footer footer";
+      grid-template-columns: auto 200px;
+      grid-gap: 8px;
   }
 
 
