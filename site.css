@@ -103,5 +103,12 @@ h1, h2 {
       grid-gap: 8px;
   }
 
+  #formInfo {
+      font-size: 14px;
+      font-style: italic;
+  }
+
+ 
+
 
 
